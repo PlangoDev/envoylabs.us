@@ -1,0 +1,20 @@
+{
+  "name": "envoylabs-realtime",
+  "version": "1.0.0",
+  "description": "EnvoyLabs Real-time WebSocket Server",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "redis": "^4.7.0",
+    "dotenv": "^16.4.7",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
