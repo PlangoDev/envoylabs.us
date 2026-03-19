@@ -32,9 +32,6 @@ services:
   frontend:
     build: ./frontend
     working_dir: /app
-    volumes:
-      - ./frontend:/app
-      - /app/node_modules
     env_file:
       - ./frontend/.env
     ports:
@@ -47,9 +44,6 @@ services:
   api:
     build: ./api
     working_dir: /app
-    volumes:
-      - ./api:/app
-      - /app/node_modules
     env_file:
       - ./api/.env
     ports:
@@ -124,9 +118,6 @@ services:
   realtime:
     build: ./realtime
     working_dir: /app
-    volumes:
-      - ./realtime:/app
-      - /app/node_modules
     env_file:
       - ./realtime/.env
     ports:
